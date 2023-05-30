@@ -1,0 +1,7 @@
+#!/command/with-contenv bashio
+# shellcheck shell=bash
+
+bashio::log.info 'Starting the openvpn1 daemon...'
+
+exec openvpn --cd /data/openvpn --config openvpn1.conf
+
