@@ -10,7 +10,7 @@ Installation:
 
 Configuration:
 * See the `/example` directory.
-* Start the addon. Do not worry about the warnings in the addon log.
+* Start the addon.
 * Using ssh, run `docker exec -it addon_local_openvpn bash -l`.
 * Place your openvpn configuration files in `/data/openvpn`.
 * Create your first openvpn service using `mkdir -p /data/services.d/openvpn1`.

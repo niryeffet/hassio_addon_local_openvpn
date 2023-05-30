@@ -1,6 +1,7 @@
 #!/command/with-contenv bashio
 # shellcheck shell=bash
 
-ln -s /data/services.d/* /run/service/ || true
+SERVICES=/data/services.d
 
+[ -d $SERVICES -a "$(ls -A $SERVICES/)" ] && ln -s $SERVICES/* /run/service/ || true
 kill -HUP 1
