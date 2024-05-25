@@ -1,6 +1,6 @@
 name: OpenVPN
 description: Virtual private network
-version: 1.0.5
+version: 1.0.6
 slug: openvpn
 init: false
 arch:
